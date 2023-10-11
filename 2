@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+	setlocale(0, "");
+	int years;
+	float proc, res, sum;
+	cout << "Введите сумму вклада: ";
+	cin >> sum;
+	cout << "Введите количество лет: ";
+	cin >> years;
+	proc = sum * 3 / 100;
+	res = sum + proc * years;
+	cout << "Сумма " << years << " лет: " << res << endl;
+	
+	return 0;
+}
